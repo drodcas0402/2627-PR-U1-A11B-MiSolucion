@@ -22,12 +22,12 @@ Inicio
 			Escribe "Introduce el precio unitario en euros (0 para terminar): "
 			Lee num
 		
-		Si num != 0 entonces
+		Mientras num != 0 hacer
 		
 			Escribe "Introduce el número de unidades: "
 			Lee unidades
 			
-			Mientras unidades <= 0 hacer
+			Mientras unidades < 0 hacer
 				Escribe "Las unidades deben ser mayores que 0"
 				Escribe "Introduce el número de unidades: "
 				Lee unidades
@@ -35,7 +35,7 @@ Inicio
 			unidadesAnt = unidadesAnt + unidades
 			predescuento = predescuento + num * unidades
 	
-	Si unidadesAnt = 0 entonces
+	Mientras unidadesAnt = 0 entonces
 	
 		Escribe "No se han registrado productos"
 	
